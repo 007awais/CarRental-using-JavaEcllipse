@@ -20,35 +20,14 @@ public class main
     {
         System.out.println(str);
     }
-
-    static void printCarDetails(List<Car> carList)
-    {
-        Print("Car ID | Brand | Model | Year | Rental Status | Rent Fee | Features | Suited For | Insurance | Damage Cost | Base Rent");
-        for(int i = 0; i < carList.size(); i++)
-        {
-            carList.get(i).printCarDetails();
-        }
+    public static void printRenterDetails(List<Renter> renters) {
+        // Method implementation here
     }
 
-    static void printRenterDetails(List<Renter> renterList)
-    {
-        System.out.println("Renter ID | Name | Email | Phone Number | Address | Features");
-        for(int i = 0; i < renterList.size(); i++)
-        {
-            renterList.get(i).printRenterDetails();
-            if(renterList.get(i).getRentedCars() != null)
-            {
-                System.out.println("Rented Cars:");
-                for(int j = 0; j < renterList.get(i).getRentedCars().size(); j++)
-                {
-                    renterList.get(i).getRentedCars().get(j).printCarDetails();
-                }
-            }
-        }
-
-        Print("\n");
-
+    public static void printCarDetails(List<Car> cars) {
+        // Method implementation here
     }
+
 
     // Main Function
     public static void main(String[] args) 
@@ -59,15 +38,7 @@ public class main
         {
             
 
-            Print("\t\t\tWELCOME TO CAR RENTAL SYSTEM\n");
-            Print("Which database in which you need to proceed");
-            Print("1.File Database");
-            Print("2.My SQL Database");
-            
-            int input0=sc.nextInt();
-            if(input0==2)
-            {
-            	
+         	
             
             Print("Choose User Mode:");
             Print("1. Car Management");
@@ -349,10 +320,10 @@ public class main
                 System.exit(0);
             }
         }
+           
     }
 }
    
-}
 
     
     
